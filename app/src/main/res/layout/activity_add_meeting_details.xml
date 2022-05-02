@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Add_meeting_details">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="170dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginLeft="130dp"-->
+<!--        app:srcCompat="@drawable/img" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="475dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="With : "
+                android:textColor="@color/textcolor"/>
+
+            <EditText
+                android:id="@+id/With_whom"
+                android:layout_width="315dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:hint="Name Of person"
+                android:inputType="textPersonName"
+                android:textColor="@color/textcolor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Mode Of Meeting : "
+                android:textColor="@color/textcolor" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/Online"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:textColor="@color/textcolor"
+                        android:text="Online" />
+
+                    <RadioButton
+                        android:id="@+id/Offline"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:textColor="@color/textcolor"
+                        android:text="Offline" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/LinkTag"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Link : "
+                android:textColor="@color/textcolor"/>
+
+            <EditText
+                android:id="@+id/Link"
+                android:layout_width="315dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/textcolor"
+                android:hint="Link Of Meeting"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/DateTag"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Date : "
+                android:textColor="@color/textcolor" />
+
+            <EditText
+                android:id="@+id/Date"
+                android:layout_width="315dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/textcolor"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:ems="10"
+                android:hint="Enter Date Of meeting" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TimeTag"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/textcolor"
+                android:text="Time : " />
+
+            <EditText
+                android:id="@+id/Time"
+                android:layout_width="315dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/textcolor"
+                android:hint="Enter Time Of meeting" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/DurationTag"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Duration : "
+                android:textColor="@color/textcolor"/>
+
+            <EditText
+                android:id="@+id/Duration"
+                android:layout_width="315dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/textcolor"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:ems="10"
+                android:hint="Enter Duration Of meeting"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+    <Button
+        android:id="@+id/add_meeting"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_background"
+        android:layout_gravity="center"
+        android:text="Add Meeting"
+        android:textColor="@color/white" />
+
+</LinearLayout>
+</ScrollView>
