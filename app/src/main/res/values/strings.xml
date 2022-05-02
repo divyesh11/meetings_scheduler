@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Meetings Scheduler</string>
     <string name="for_empty_view">There is no meeting scheduled</string>
-    <string name="mapapikey">AIzaSyBN65nH7jBLxejuO7vrlOxrKvSmpSISPBw</string>
+    <string name="mapapikey"><APIKEY></string>
 </resources>
